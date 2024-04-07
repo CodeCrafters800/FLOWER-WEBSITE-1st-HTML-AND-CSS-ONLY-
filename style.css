@@ -8,7 +8,7 @@
     outline: none;border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .4s linear;
+    transition: .3s linear;
 }
 html{
     font-size: 62.5%;
@@ -18,6 +18,17 @@ html{
 }
 section{
     padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding:1rem;
+    margin: 2ram 0;
+    background: rgba(255, 51, 153, .05);
+}
+.heading span{
+    color:var(---pink);
 }
 .btn{
     display: inline-block;
@@ -82,7 +93,7 @@ header .icons a:hover{
 .home{
     display: flex; 
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background:url(./img/bouquet-various-flowers.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,11 +118,55 @@ header .icons a:hover{
     line-height: 1.5;
     width:70%;
  }
-
-
-
-
-
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 100%;
+    object-position: cover;
+}
+.about .row .video-container h3{
+    position:absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 50%;transform: translateY(-50%);
+    font-size: xx-large;
+    color:#333;
+    background: #fff;
+    width: 100%;
+    height:15%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.about .row .content{
+    flex:1 1 40rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 0.5em 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
 
 
 
@@ -186,5 +241,7 @@ MEDIA QUERIES*/
     html{
         font-size: 50%;
     }
-    
+    .heading{
+        font-size: 3rem;
+    }
 }
